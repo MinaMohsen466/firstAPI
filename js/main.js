@@ -67,7 +67,6 @@ function removeprod(){
 }
 
 opacityDiv.onclick = removeprod;
-window.onscroll = removeprod;
 
 mainprod.style.display = "none";
 opacityDiv.style.display = "none";
