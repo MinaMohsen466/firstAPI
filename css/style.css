@@ -143,12 +143,13 @@ button#closeprod{
         margin-bottom: 60px;
     }
     #container h3{
-        font-size: 10px;
+        font-size: 8px;
     }
     #container h2{
-        font-size: 10px;
+        font-size: 8px;
         padding: 4px;
-        border-radius: 10px;
+        border-radius: 7px;
+        font-weight: bolder;
     }
     #container button{
         font-size: 8px;
