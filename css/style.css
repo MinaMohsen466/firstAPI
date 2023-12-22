@@ -1,22 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya&family=Black+Ops+One&family=Dhurjati&family=Josefin+Sans:wght@100;300;400&family=Poor+Story&family=Rubik+Lines&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya&family=Averia+Libre:wght@300&family=Black+Ops+One&family=Dhurjati&family=Josefin+Sans:wght@100;300;400&family=Poor+Story&family=Rubik+Lines&family=Rubik+Moonrocks&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Averia Libre;
 }
 #opacityDiv{
     width: 100%;
-    height: 3000px;
-    background-color: #F39F5A;
+    height: 4500px;
+    background-color: black;
     opacity: .5;
     position: absolute;
 }
 h1{
     font-size: 50px;
-    text-decoration: underline;
-    width: 400px;
+    text-align: center;
     padding: 20px;
     margin: 0 auto;
     color: #AE445A;
+}
+h1::first-letter{
+    color: #F39F5A;
+    text-shadow: 2px 2px 5px black;
 }
 #main{
     width: 90%;
@@ -39,7 +46,8 @@ h1{
     justify-content: space-between;
     border-radius: 20px;
     border: 2px solid #F39F5A;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    text-align: center;
 }
 #container img{
     width: 100%;
@@ -50,25 +58,34 @@ h1{
 }
 #container h3{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
+}
+#container div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #container h2{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #F39F5A;
 }
 #container button{
     border: none;
     padding: 5px 10px;
     border-radius: 20px;
-    background-color: #F39F5A;
-    font-size: 15px;
-    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    color: #F39F5A;
     cursor: pointer;
     font-weight: bolder;
+    text-align: center;
+    filter: drop-shadow(.5px .5px 1px black);
 }
 #container button:hover{
-    scale: 1.02;
-    filter: drop-shadow(1px 1px 2px white);
+    transform: translateX(5px);
 }
 #mainprod{
     width: 60%;
@@ -111,9 +128,97 @@ button#closeprod{
     cursor: pointer;
     filter: drop-shadow(1px 1px 4px black);
     z-index: 10;
+    font-family: Rubik Moonrocks;
 }
 #price{
     color: #F39F5A;
     font-size: 30px;
     filter: drop-shadow(2px 2px 5px black);
+    font-family: Rubik Moonrocks;
+}
+@media (max-width:600px){
+    #container{
+        width: 49%;
+        height: 330px;
+        margin-bottom: 60px;
+    }
+    #container h3{
+        font-size: 10px;
+    }
+    #container h2{
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 12px;
+    }
+    #container button{
+        font-size: 8px;
+    }
+    #mainprod{
+        width: 85%;
+        padding: 5px;
+        background-color: #AE445A;
+        margin: 10px auto;
+        border-radius: 20px;
+        position: fixed;
+        top: 200px;
+        left: 8%;
+        z-index: 1;
+    }
+    .product img{
+        width: 50%;
+        height: 200px;
+        margin-right: 5px;
+    }
+    .product div h3{
+        font-size: 9px;
+        margin: 5px 0;
+        line-height: 20px;
+    }
+    #price{
+        font-size: 15px;
+    }
+    button#closeprod{
+        opacity: 0;
+        
+    }
+}
+@media (min-width:601px) and (max-width:1024px){
+    #container{
+        width: 32%;
+        height: 400px;
+        margin-bottom: 60px;
+    }
+    #container h3{
+        font-size: 15px;
+    }
+    #container h2{
+        font-size: 15px;
+        padding: 8px;
+    }
+    #container button{
+        font-size: 10px;
+    }
+    #mainprod{
+        width: 80%;
+        padding: 10px;
+        background-color: #AE445A;
+        top: 150px;
+        left: 10%;
+        z-index: 1;
+    }
+    .product img{
+        width: 50%;
+        height: 400px;
+        margin-right: 8px;
+    }
+    .product div h3{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    #price{
+        font-size: 20px;
+    }
+    button#closeprod{
+        opacity: 0;
+    }
 }

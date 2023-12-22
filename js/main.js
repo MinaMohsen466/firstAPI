@@ -21,8 +21,10 @@ ajax.onreadystatechange = function(){
             <div id="container">
             <img src="${data[i].image}">
             <h3>${data[i].title}</h3>
-            <h2>${data[i].price}$</h2>
-            <button onclick="showMore(${i})">Show More</button>
+            <div>
+                <h2>${data[i].price}$</h2>
+                <button onclick="showMore(${i})">Show More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
             </div>
             `
         }
@@ -63,6 +65,9 @@ function removeprod(){
     opacityDiv.style.display = "none";
     closeprod.style.display = "none";
 }
+
+opacityDiv.onclick = removeprod;
+window.onscroll = removeprod;
 
 mainprod.style.display = "none";
 opacityDiv.style.display = "none";
