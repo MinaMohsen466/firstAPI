@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#opacityDiv{
+    width: 100%;
+    height: 3000px;
+    background-color: #F39F5A;
+    opacity: .5;
+    position: absolute;
+}
+h1{
+    font-size: 50px;
+    text-decoration: underline;
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    color: #AE445A;
+}
+#main{
+    width: 90%;
+    padding: 5px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#container{
+    width: 24%;
+    height: 500px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    background-color: #AE445A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid #F39F5A;
+    padding-bottom: 10px;
+}
+#container img{
+    width: 100%;
+    height: 75%;
+}
+#container h3, h2, button{
+    margin: 0 15px;
+}
+#container h3{
+    color: white;
+    font-size: 14px;
+}
+#container h2{
+    color: white;
+    font-size: 20px;
+}
+#container button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #F39F5A;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#container button:hover{
+    scale: 1.02;
+    filter: drop-shadow(1px 1px 2px white);
+}
+#mainprod{
+    width: 60%;
+    padding: 10px;
+    background-color: #AE445A;
+    margin: 10px auto;
+    border-radius: 20px;
+    position: fixed;
+    top: 25px;
+    left: 20%;
+    z-index: 1;
+}
+#mainprod .product{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product img{
+    width: 50%;
+    height: 500px;
+    margin-right: 10px;
+    border: 2px solid #F39F5A;
+    border-radius: 20px;
+}
+.product div h3{
+    font-size: 18px;
+    margin: 10px 0;
+    color:white;
+    line-height: 25px;
+}
+button#closeprod{
+    position: fixed;
+    top: 22px;
+    left: 79.5%;
+    font-size: 50px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 4px black);
+    z-index: 10;
+}
+#price{
+    color: #F39F5A;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 5px black);
+}
